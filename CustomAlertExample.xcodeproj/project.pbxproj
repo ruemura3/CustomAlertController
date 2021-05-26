@@ -13,6 +13,7 @@
 		2AAACB6F265BB7F800CF8B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AAACB6D265BB7F800CF8B3B /* Main.storyboard */; };
 		2AAACB71265BB7F900CF8B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AAACB70265BB7F900CF8B3B /* Assets.xcassets */; };
 		2AAACB74265BB7F900CF8B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AAACB72265BB7F900CF8B3B /* LaunchScreen.storyboard */; };
+		2AAACB7C265BCC9F00CF8B3B /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAACB7B265BCC9F00CF8B3B /* CustomAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2AAACB70265BB7F900CF8B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AAACB73265BB7F900CF8B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AAACB75265BB7F900CF8B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AAACB7B265BCC9F00CF8B3B /* CustomAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				2AAACB67265BB7F800CF8B3B /* AppDelegate.swift */,
 				2AAACB69265BB7F800CF8B3B /* SceneDelegate.swift */,
 				2AAACB6B265BB7F800CF8B3B /* ViewController.swift */,
+				2AAACB7B265BCC9F00CF8B3B /* CustomAlertController.swift */,
 				2AAACB6D265BB7F800CF8B3B /* Main.storyboard */,
 				2AAACB70265BB7F900CF8B3B /* Assets.xcassets */,
 				2AAACB72265BB7F900CF8B3B /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AAACB6C265BB7F800CF8B3B /* ViewController.swift in Sources */,
+				2AAACB7C265BCC9F00CF8B3B /* CustomAlertController.swift in Sources */,
 				2AAACB68265BB7F800CF8B3B /* AppDelegate.swift in Sources */,
 				2AAACB6A265BB7F800CF8B3B /* SceneDelegate.swift in Sources */,
 			);
@@ -293,7 +297,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ruemura3.com.CustomAlertExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruemura3.CustomAlertExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ruemura3.com.CustomAlertExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruemura3.CustomAlertExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
