@@ -66,11 +66,6 @@ let DESTRUCTIVE_BUTTON_TITLE_COLOR = UIColor.white
 let INTERVAL = 0.022 * SCREEN_HEIGHT
 /* ↑ ポップアップの設定はここをいじる ↑ */
 
-/// カスタムアラートスタイルの種類（.actionSheetは現段階では非対応）
-enum CustomAlertControlerStyle {
-    case alert
-}
-
 /// カスタムアラートアクションの種類
 enum CustomAlertControllerAction {
     case cancel
@@ -93,6 +88,11 @@ class CustomAlertAction : NSObject {
         self.style = style
         self.handler = handler
     }
+}
+
+/// カスタムアラートコントローラの種類（.actionSheetは現段階では非対応）
+enum CustomAlertControlerStyle {
+    case alert
 }
 
 /// カスタムアラートコントローラクラス
