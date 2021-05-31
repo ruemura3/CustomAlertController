@@ -4,7 +4,7 @@
 SwiftデフォルトのUIAlertControlerとほぼ同じように使えるCustomAlertControllerです。
 
 ## 使い方
-最も詳しい使い方は作者ブログを御覧ください[準備中](https://ruemura3.com)  
+最も詳しい使い方は作者ブログを御覧ください（[【Swift】UIAlertControllerと同じように使えるポップアップ](https://ruemura3.com)）  
 
 
 - すべてがCustomAlertControllerに記述されていますので、CustomAlertController.swiftを自分のプロジェクトに追加していただき、以下のように使用することができます。
