@@ -103,6 +103,13 @@ class CustomAlertController: UIViewController, UIViewControllerTransitioningDele
     /// アラートメッセージ
     var alertMessage: String?
     
+    /// 初期化
+    internal convenience init(title: String?, message: String?, preferredStyle: CustomAlertControlerStyle) {
+        self.init()
+        self.alertTitle = title
+        self.alertMessage = message
+    }
+    
     // タイトルラベル
     var titleLabel = UILabel()
     
@@ -126,29 +133,6 @@ class CustomAlertController: UIViewController, UIViewControllerTransitioningDele
     
     /// アクション格納配列
     var actions = [CustomAlertAction]()
-    /// viewDidLayoutSubview()は複数回呼び出されるため最初の1度だけ呼び出されるようにlazyを利用
-    private lazy var initViewLayout : Void = {
-        setUIParts()
-    }()
-    
-    /// 初期化
-    internal convenience init(title: String?, message: String?, preferredStyle: CustomAlertControlerStyle) {
-        self.init()
-        self.alertTitle = title
-        self.alertMessage = message
-    }
-    
-    /// ビューが読み込まれたときに呼ばれる処理
-    override func viewDidLoad() {
-        // 自身でサイズを決めているためリサイズを切る
-        alertView.autoresizesSubviews = false
-    }
-    
-    /// サブビューをレイアウトした際に呼ばれる処理
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        _ = initViewLayout
-    }
     
     /// アクション追加
     func addAction(_ action:CustomAlertAction){
@@ -188,6 +172,23 @@ class CustomAlertController: UIViewController, UIViewControllerTransitioningDele
             }
         })
     }
+    
+    /// ビューが読み込まれたときに呼ばれる処理
+    override func viewDidLoad() {
+        // 自身でサイズを決めているためリサイズを切る
+        alertView.autoresizesSubviews = false
+    }
+    
+    /// サブビューをレイアウトした際に呼ばれる処理
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        _ = initViewLayout
+    }
+    
+    /// viewDidLayoutSubview()は複数回呼び出されるため最初の1度だけ呼び出されるようにlazyを利用
+    private lazy var initViewLayout : Void = {
+        setUIParts()
+    }()
     
     /// UI部品をセットする
     private func setUIParts() {
